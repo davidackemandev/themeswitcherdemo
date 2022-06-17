@@ -1,0 +1,137 @@
+:root {
+    --sans: -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, oxygen, ubuntu,
+      cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --serif: Constantia, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida,
+      'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
+  
+    --bg0: #f8f9fa;
+    --bg1: #e9ecef;
+    --bg2: #dee2e6;
+    --bg3: #ced4da;
+    --bg4: #b9bfc4;
+    --bg5: #a5aaae;
+    --bg6: #909499;
+    --txt0: #000;
+    --txt1: #212529;
+    --txt2: #343a40;
+    --txt3: #495057;
+    --highlight: #0d6efd;
+  }
+  :root[font-mode='sans'] {
+    --text: var(--sans);
+  }
+  :root[font-mode='serif'] {
+    --text: var(--serif);
+  }
+  :root[color-mode='light'] {
+    --bg0: #f8f9fa;
+    --bg1: #e9ecef;
+    --bg2: #dee2e6;
+    --bg3: #ced4da;
+    --bg4: #b9bfc4;
+    --bg5: #a5aaae;
+    --bg6: #909499;
+    --txt0: #000;
+    --txt1: #212529;
+    --txt2: #343a40;
+    --txt3: #495057;
+    --highlight: #0d6efd;
+  }
+  :root[color-mode='solarized'] {
+    --bg0: #fdf6e3;
+    --bg1: #eee8d5;
+    --bg2: #ddd6c1;
+    --bg3: #d1cbb8;
+    --bg4: #bcb7a6;
+    --bg5: #a7a293;
+    --bg6: #928e81;
+    --buttonbg: #b58900;
+    --txt0: #000;
+    --txt1: #212529;
+    --txt2: #343a40;
+    --txt3: #495057;
+    --highlight: #cb4b16;
+  }
+  :root[color-mode='dark'] {
+    --bg0: #212529;
+    --bg1: #343a40;
+    --bg2: #495057;
+    --bg3: #6c757d;
+    --bg4: #7b838a;
+    --bg5: #899197;
+    --bg6: #989ea4;
+    --txt0: #fff;
+    --txt1: #f8f9fa;
+    --txt2: #e9ecef;
+    --txt3: #dee2e6;
+    --highlight: #0d6efd;
+  }
+  :root[color-mode='cobalt'] {
+    --bg0: #15232d;
+    --bg1: #122738;
+    --bg2: #163042;
+    --bg3: #193549;
+    --bg4: #30495b;
+    --bg5: #475d6d;
+    --bg6: #5e7280;
+    --buttonbg: #5d37f0;
+    --txt0: #ffffff;
+    --txt1: #f8f9fa;
+    --txt2: #e9ecef;
+    --txt3: #dee2e6;
+    --highlight: #ffc600;
+  }
+
+body {
+    background: var(--bg0);
+    color: var(--txt0);    
+    font-family: var(--text)
+}
+
+.bg0{
+    background: var(--bg0);
+}
+
+.bg1{
+    background: var(--bg1);
+}
+
+.bg2{
+    background: var(--bg2);
+}
+  
+.bg3{
+    background: var(--bg3);
+}
+
+.bg4{
+    background: var(--bg4);
+}
+.bg5{
+    background: var(--bg5);
+}
+.bg6{
+    background: var(--bg6);
+}
+
+.themeSelectOuterWrap{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.themeSelectInnerWrap{
+    max-width: 400px;
+    height: 600px;
+}
+
+.colorSwatch{
+    width: 100%;
+    height: 60px;
+}
+
+.colorSwatch.txt1{
+
+}
+  

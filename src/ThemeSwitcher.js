@@ -33,10 +33,8 @@ export default function ThemeSwitcher(props) {
   }
   
   return (
-    typeof window !== 'undefined' ?
-    <>
     <div className="themeSelectOuterWrap">
-      <div className={`themeSelectWrap ${themeSelectOpenClass}`}>
+      <div className="themeSelectInnerWrap">
       <select
         onChange={(e) => {
           selectColorMode(e);
@@ -50,13 +48,14 @@ export default function ThemeSwitcher(props) {
       </select>
       <div className={`fontModeButton sansButton ${sansActive}`} onClick={()=>{setSans()}}>Ag<span className="fontButtonLabel">SANS</span></div>
       <div className={`fontModeButton serifButton ${serifActive}`} onClick={()=>{setSerif()}}>Ag<span className="fontButtonLabel">SERIF</span></div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <div className="colorSwatch bg1"></div>
+      <div className="colorSwatch bg2"></div>
+      <div className="colorSwatch bg3"></div>
+      <div className="colorSwatch bg4"></div>
+      <div className="colorSwatch bg5"></div>
+      <div className="colorSwatch bg6"></div>
       </div>
    </div>
-   <div className={`clickMeOverlay ${themeSelectOpenClass}`}
-   onClick={()=>{props.setThemeSelectOpen(!props.themeSelectOpen)}}
-   ></div>
-   </>
-   : 
-   <></>
   );
 }
