@@ -115,6 +115,7 @@ body {
 }
 
 .themeSelectOuterWrap{
+    background: var(--bg1);
     height: 100%;
     display: flex;
     align-items: center;
@@ -122,8 +123,17 @@ body {
 }
 
 .themeSelectInnerWrap{
-    max-width: 400px;
-    height: 600px;
+    background: var(--bg0);
+    max-width: 340px;
+    border: 1px solid var(--bg3);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.bgWrap{
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 .colorSwatch{
@@ -133,5 +143,15 @@ body {
 
 .colorSwatch.txt1{
 
+}
+
+h5{
+text-transform: uppercase;
+font-weight: bold;
+color: var(--txt3)
+}
+
+.highlight {
+    color: var(--highlight)
 }
   
