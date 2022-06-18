@@ -115,8 +115,8 @@ body {
 }
 
 .themeSelectOuterWrap{
+  height:100%;
     background: var(--bg1);
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -134,6 +134,7 @@ body {
 .bgWrap{
     border-radius: 8px;
     overflow: hidden;
+    display: flex;
 }
 
 .colorSwatch{
@@ -154,4 +155,56 @@ color: var(--txt3)
 .highlight {
     color: var(--highlight)
 }
-  
+
+.button {
+  border: 1px solid var(--bg3);
+  padding: 6px 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right: 8px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button:hover{
+  border: 1px solid var(--bg3)
+}
+
+.button.active{
+  border: 1px solid var(--highlight);
+  color: var(--highlight);
+}
+
+.themeButtonsWrap{
+  margin: 8px 0px;
+  display: flex;
+  width: 100%;
+}
+
+.fontButtonsWrap{
+  margin: 8px 0px;
+  display: flex;
+  width: 100%;
+}
+
+.fontButtonsWrap > .button{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+span.fontButtonLabel{
+  font-size: .6em;
+  font-family: var(--sans)
+}
+
+.button.sansButton {
+  font-family: var(--sans)
+}
+
+.button.serifButton {
+  font-family: var(--serif)
+}
